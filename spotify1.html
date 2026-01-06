@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="logo.png">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="soptify1.css">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="navbar">
+                <!-- home icon -->
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <!-- search icon -->
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <!-- library  -->
+            <div class="library">
+                <div class="option">
+                    <div class="lib-option nav-option">
+                        <img src="library_icon.png" alt="library">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <!-- boxes  -->
+                <div class="lib-box">
+                    <div class="box hide2">
+                        <p class="para1">Create your first playlist</p>
+                        <p class="para2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box-2 hide2">
+                        <p class="para1">Let's find some podcasts to follow</p>
+                        <p class="para2">We'll keep you updated on new episodes</p>
+                        <button class="badge-2">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- main content -->
+        <div class="main-content">
+            <!-- sticky portion -->
+            <div class="stickey">
+                <div class="stickey-nav">
+                    <img src="backward_icon.png" alt="back">
+                    <img src="forward_icon.png" alt="next" class="hide">
+                </div>
+                <div class="nav-stickey-button">
+                    <button class="badge-3 hide" style="margin-right: 3px;">Explore Premium</button>
+                    <button class="badge-4 hide1"><i class="fa-regular fa-circle-down"></i> Install App</button>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </div>
+
+            <!-- cards -->
+            <h2>Recently Played</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="card1img.jpeg" alt="card1">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily update of the most played tracks...</p>
+                </div>
+            </div>
+
+            <h2>Trending now near you</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="card2img.jpeg" alt="card2">
+                    <p class="card-title">Top 50 - Love songs</p>
+                    <p class="card-info">Feel the songs and explore ...</p>
+                </div>
+                <div class="card">
+                    <img src="card3img.jpeg" alt="card3">
+                    <p class="card-title">Top 20 - Lofi songs</p>
+                    <p class="card-info">Different vibe and peace your mind...</p>
+                </div>
+                <div class="card">
+                    <img src="card4img.jpeg" alt="card4">
+                    <p class="card-title">Top 50 - South trending songs</p>
+                    <p class="card-info">Enjoy with Vijay and Superstar Rajnikant...</p>
+                </div>
+            </div>
+
+            <h2>Recently Played</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="card5img.jpeg" alt="card5">
+                    <p class="card-title">Top songs Global</p>
+                    <p class="card-info">Your daily update of the most played tracks...</p>
+                </div>
+                <div class="card">
+                    <img src="card6img.jpeg" alt="card6">
+                    <p class="card-title">Top songs India</p>
+                    <p class="card-info">Your daily update of the most played tracks...</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- music player -->
+    <div class="music-player">
+        <div class="mus-album">
+            <div class="image">
+                <img src="album_picture.jpeg" alt="album">
+                <div class="name-div">
+                    <div class="day-name">Daylight</div>
+                    <div class="name2">David Kushner</div>
+                </div>
+                <div class="alb-icon1">
+                    <img src="album_icon1.png" class="alb-icon-1 al-icon" alt="like">
+                </div>
+                <div class="alb-icon2">
+                    <img src="album_icon2.png" class="alb-icon-2 al-icon" alt="view">
+                </div>
+            </div>
+        </div>
+
+        <div class="player">
+            <div class="player-control">
+                <img src="player_icon1.png" alt="play1">
+                <img src="player_icon2.png" alt="play2">
+                <img src="player_icon3.png" alt="play3" style="height: 2.5rem; opacity: 1;">
+                <img src="player_icon4.png" alt="play4">
+                <img src="player_icon5.png" alt="play5">
+            </div>
+            <div class="playback-bar">
+                <span class="start">00:00</span>
+                <input type="range" min="0" max="100" step="1">
+                <span class="end">3:33</span>
+            </div>
+        </div>
+         <div class="mus-control">
+            <div class="icon-cont">
+                <img src="controls_icon1.png" alt="" style="height: 3rem;">
+                <img src="controld_icon2.png" alt="" style="height: 3rem;">
+                <img src="controls_icon3.png" alt="" style="height: 1.5rem;" class="line-3">
+                <img src="controls_icon4.png" alt=""style="height: 1.5rem;" class="tv">
+                <img src="controls_icon5.png" alt=""style="height: 3rem;">
+                <input type="range" name="" id="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

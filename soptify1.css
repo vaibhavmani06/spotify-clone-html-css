@@ -1,0 +1,344 @@
+/* ---------- Global ---------- */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+  margin: 0;
+  color: white;
+  overflow-x: hidden;   /* sirf horizontal scroll disable */
+  overflow-y: auto;     /* vertical scroll enable */
+  scrollbar-color: black black;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  padding: 0.25rem;
+}
+
+.sidebar {
+  background-color: black;
+  width: 300px;
+  border-radius: 1rem;
+  margin-right: 0.75rem;
+}
+
+.main-content {
+  background-color: #121212;
+  flex: 1; /*bacha huaa sara space occupie kar lega*/
+  border-radius: 1rem;
+  overflow: auto;
+  padding: 0 1.5rem;
+}
+
+.music-player {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* ---------- Links ---------- */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ---------- Sidebar ---------- */
+.navbar {
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  height: 90px;
+  padding: 0.3rem 0.56rem;
+  justify-content: center;
+}
+
+.nav-option {
+  line-height: 2.1rem;
+  opacity: 0.6;
+  padding: 0.2rem 0.3rem;
+}
+
+.nav-option:hover {
+  opacity: 1;
+}
+
+.nav-option i {
+  font-size: 1.5rem;
+}
+
+.nav-option a {
+  font-size: 1rem;
+  margin-left: 0.8rem;
+}
+
+.library {
+  background-color: #121212;
+  border-radius: 1rem;
+  height: 100%;
+  margin-top: 0.30rem;
+  padding: 0.2rem 0.3rem;
+}
+
+.option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lib-option img {
+  height: 1.25rem;
+}
+
+.icons {
+  font-size: 1rem;
+  display: flex;
+}
+
+.icons i {
+  opacity: 0.5;
+  margin-right: 1rem;
+}
+
+.icons i:hover {
+  opacity: 1;
+}
+
+/* ---------- Boxes ---------- */
+.box, .box-2 {
+  background-color: #232323;
+  border-radius: 0.8rem;
+  margin: 0.5rem 0;
+  padding: 0.45rem 1.25rem;
+}
+
+.box {
+  height: 7.5rem;
+}
+.box-2 {
+  height: 8.5rem;
+}
+
+.para1 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.para2 {
+  font-size: 0.75rem;
+  opacity: 0.75;
+}
+
+.badge, .badge-2, .badge-3, .badge-4 {
+  font-size: 1rem;
+  border-radius: 1.50rem;
+  border: none;
+  padding: 0.20rem 1rem;
+  font-weight: 550;
+  height: 1.6rem;
+}
+
+.badge-4 {
+  background-color: black;
+  color: white;
+}
+
+/* ---------- Sticky Navbar ---------- */
+.stickey {
+  position: sticky;
+  top: 0;
+  background-color: #121212;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  align-items: center;
+  z-index: 10;
+}
+
+.stickey-nav img {
+  height: 0.8rem;
+}
+
+.nav-stickey-button {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width:1090px) {
+  .hide {
+    display: none;
+  }
+}
+
+@media (max-width:1020px) {
+  .hide1 {
+    display: none;
+  }
+}
+
+
+
+/* ---------- Cards ---------- */
+.card {
+  background-color: #232323;
+  width: 150px;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  margin-left: 1.5rem;
+  margin-top: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 8px 8px 10px rgb(0, 0, 0);
+  transform: scale(1.05);
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card img {
+  height: 150px;
+  border-radius: 0.4rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 550;
+}
+
+.card-info {
+  opacity: 0.7;
+  font-size: 0.8rem;
+}
+
+.footer {
+  height: 300px;
+}
+
+/* ---------- Music Player ---------- */
+
+.mus-album{
+    width: 35%;
+}
+.image {
+  display: flex;
+  align-items: center;   /* ✅ sab vertically center */
+  gap: 1rem;
+}
+
+.image img {
+  height: 60px;
+  width: 60px;
+  border-radius: 0.3rem;
+  object-fit: cover;
+}
+
+.name-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.day-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.name2 {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.alb-icon1, .alb-icon2 {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+img.al-icon{
+   
+  width: 2.5rem !important;   /* 1.5rem = 24px */
+  height: 2.5rem !important;
+  object-fit: contain;
+  display: inline-block;
+
+} 
+
+
+
+.alb-icon-1 {
+  /* height: 1.5rem; */
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain; /* image distort na ho */
+  cursor: pointer;
+}
+
+.alb-icon-2 {
+  height: 2rem;
+}
+
+
+
+/* ---------- Player Controls ---------- */
+
+.player{
+    width: 30%;
+}
+.player-control {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+}
+
+.playe1:hover {
+    opacity: 1;
+}
+
+.player-control img {
+  height: 1.5rem;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+.player-control img:hover {
+  opacity: 1;
+}
+
+.play-button {
+    height: 5rem;
+}
+
+.playback-bar {
+   
+}
+
+.mus-control {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+}
+
+.icon-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.line-3 , .tv {
+   line-height: 1rem;
+} 
